@@ -1,123 +1,133 @@
-<section id="solutions" class="solutions">
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tryino</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; color:#333; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    header img { height:50px; } /* Logo büyütüldü */
+    nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+    .hero { text-align:center; padding:100px 20px; background:linear-gradient(135deg,#0078D7,#00ADEF); color:#fff; }
+    .hero h1 { font-size:2.5em; margin-bottom:20px; }
+    .hero p { font-size:1.2em; max-width:800px; margin:auto; }
+    .section-title { text-align:center; font-size:2em; margin:60px 0 40px; font-weight:bold; }
+    .solutions { background:#f9f9f9; padding:40px 20px; }
+    .solution { margin-bottom:60px; text-align:center; }
+    .mockup { display:flex; justify-content:center; margin-bottom:20px; }
+    .monitor { width:80%; max-width:900px; background:#333; border-radius:15px; padding:20px; position:relative; box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+    .monitor:before { content:""; display:block; height:20px; width:60px; background:#555; border-radius:0 0 8px 8px; position:absolute; bottom:-20px; left:50%; transform:translateX(-50%);}
+    .monitor-screen { background:#000; border-radius:8px; overflow:hidden; }
+    .monitor-screen img { width:100%; display:block; }
+    .solution h3 { margin:20px 0 10px; color:#0078D7; }
+    footer { background:#222; color:#fff; padding:40px 20px; text-align:center; }
+    footer a { color:#fff; text-decoration:none; font-weight:bold; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="Logo T.png" alt="Tryino Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Microsoft Partner Banner (Header) -->
+  <div id="dccn-6888d06c-e301-4acf-a2eb-6a431265415a"></div>
+  <script type='text/javascript'>
+      (function() {
+          const scriptId = '6888d06c-e301-4acf-a2eb-6a431265415a';
+          const bannerHeight = 250;
+          const bannerWidth = 300;
+          const embedType = 'banner';
+          const script = document.createElement('script');
+          script.defer = true;
+          script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=${bannerWidth}&embedType=${embedType}`;
+          document.body.append(script);
+      })();
+  </script>
+
+  <!-- Hero / Company Description -->
+  <section id="about" class="hero">
+    <h1>Driving Customer Engagement with Microsoft Dynamics 365</h1>
+    <p>
+      Tryino is a proud member of the <strong>Microsoft AI Cloud Partner Program</strong>.  
+      With our young and dynamic team, we deliver CRM, Customer Insights, CPQ, and Loyalty solutions.  
+      We closely follow innovations, apply them in our projects, and run enterprise solutions on <strong>Azure</strong> 
+      to ensure agility, scalability, and performance.
+    </p>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="solutions">
     <h2 class="section-title">Our Solutions</h2>
 
     <!-- Solution 1 -->
     <div class="solution">
       <h3>Dynamics 365 Sales Implementations</h3>
-      <div class="mockup">
-        <div class="monitor">
-          <div class="monitor-screen">
-            <img src="Fırsat Yönetimi.png" alt="Opportunity Management">
-          </div>
-        </div>
-      </div>
-      <p>
-        Automate opportunity management, forecasting, and relationship analytics with Dynamics 365 Sales. 
-        Track deals, predict revenue, and make informed sales decisions.
-      </p>
+      <div class="mockup"><div class="monitor"><div class="monitor-screen">
+        <img src="Fırsat Yönetimi.png" alt="Opportunity Management">
+      </div></div></div>
+      <p>Automate opportunity management, forecasting, and relationship analytics. Track deals, predict revenue, and accelerate sales performance.</p>
     </div>
 
     <!-- Solution 2 -->
     <div class="solution">
       <h3>Customer Insights (Data)</h3>
-      <div class="mockup">
-        <div class="monitor">
-          <div class="monitor-screen">
-            <img src="Churn Score.png" alt="Churn Prediction">
-          </div>
-        </div>
-      </div>
-      <p>
-        Create a unified 360° customer view, run churn prediction models, and connect data from multiple sources 
-        with out-of-the-box integration connectors.
-      </p>
+      <div class="mockup"><div class="monitor"><div class="monitor-screen">
+        <img src="Churn Score.png" alt="Churn Prediction">
+      </div></div></div>
+      <p>Unify customer data, run churn prediction, and build a 360° view of your customers with ready-to-use Azure-powered connectors.</p>
     </div>
 
     <!-- Solution 3 -->
     <div class="solution">
       <h3>Customer Insights Journeys</h3>
-      <div class="mockup">
-        <div class="monitor">
-          <div class="monitor-screen">
-            <img src="Marketing Journey.jpeg" alt="Marketing Journey">
-          </div>
-        </div>
-      </div>
-      <p>
-        Orchestrate personalized, multi-channel journeys (email, SMS, push notifications) and 
-        optimize with A/B testing, AI recommendations, and journey analytics.
-      </p>
+      <div class="mockup"><div class="monitor"><div class="monitor-screen">
+        <img src="Marketing Journey.jpeg" alt="Marketing Journey">
+      </div></div></div>
+      <p>Design personalized, multi-channel journeys with email, SMS, and push notifications. Use A/B testing and AI to optimize customer engagement.</p>
     </div>
 
     <!-- Solution 4 -->
     <div class="solution">
       <h3>TRY CPQ</h3>
-      <div class="mockup">
-        <div class="monitor">
-          <div class="monitor-screen">
-            <img src="TRYCPQ.png" alt="TRY CPQ Add-on">
-          </div>
-        </div>
-      </div>
-      <p>
-        Our native Dynamics 365 add-on for Configure-Price-Quote. Configure complex products, 
-        apply advanced pricing and discounting models, and generate quotes directly inside opportunities.
-      </p>
+      <div class="mockup"><div class="monitor"><div class="monitor-screen">
+        <img src="Forecast Predictions.png" alt="TRY CPQ">
+      </div></div></div>
+      <p>Our native Dynamics 365 add-on for Configure-Price-Quote. Configure products, apply advanced pricing and discounts, and generate quotes directly inside Sales opportunities.</p>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="hero" style="background:#0078D7;">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:serdar.turkoglu@tryino.com" style="color:#fff;">serdar.turkoglu@tryino.com</a></p>
+  </section>
 
-<!-- CSS -->
-<style>
-.solutions {
-  padding: 60px 20px;
-  background: #f9f9f9;
-}
-.section-title {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 40px;
-  font-weight: bold;
-}
-.solution {
-  margin-bottom: 60px;
-  text-align: center;
-}
-.mockup {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.monitor {
-  width: 80%;
-  max-width: 900px;
-  background: #333;
-  border-radius: 15px;
-  padding: 20px;
-  position: relative;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-.monitor:before {
-  content: "";
-  display: block;
-  height: 20px;
-  width: 60px;
-  background: #555;
-  border-radius: 0 0 8px 8px;
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.monitor-screen {
-  background: #000;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.monitor-screen img {
-  width: 100%;
-  display: block;
-}
-</style>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tryino Yazılım ve Bilişim Teknolojileri LTD ŞTİ. All rights reserved.</p>
+    <!-- Microsoft Partner Banner (Footer) -->
+    <div id="dccn-6888d06c-e301-4acf-a2eb-6a431265415a-footer"></div>
+    <script type='text/javascript'>
+        (function() {
+            const scriptId = '6888d06c-e301-4acf-a2eb-6a431265415a';
+            const bannerHeight = 250;
+            const bannerWidth = 300;
+            const embedType = 'banner';
+            const script = document.createElement('script');
+            script.defer = true;
+            script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=${bannerWidth}&embedType=${embedType}`;
+            document.getElementById('dccn-6888d06c-e301-4acf-a2eb-6a431265415a-footer').append(script);
+        })();
+    </script>
+  </footer>
+
+</body>
+</html>
