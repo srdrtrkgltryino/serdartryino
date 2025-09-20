@@ -1,155 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tryino</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #2C3E50;
-      line-height: 1.6;
-      background: #fff;
-    }
+<section id="solutions" class="solutions">
+  <div class="container">
+    <h2 class="section-title">Our Solutions</h2>
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #eee;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 10%;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+    <!-- Solution 1 -->
+    <div class="solution">
+      <h3>Dynamics 365 Sales Implementations</h3>
+      <div class="mockup">
+        <div class="monitor">
+          <div class="monitor-screen">
+            <img src="Fırsat Yönetimi.png" alt="Opportunity Management">
+          </div>
+        </div>
+      </div>
+      <p>
+        Automate opportunity management, forecasting, and relationship analytics with Dynamics 365 Sales. 
+        Track deals, predict revenue, and make informed sales decisions.
+      </p>
+    </div>
 
-    header img {
-      height: 40px;
-    }
+    <!-- Solution 2 -->
+    <div class="solution">
+      <h3>Customer Insights (Data)</h3>
+      <div class="mockup">
+        <div class="monitor">
+          <div class="monitor-screen">
+            <img src="Churn Score.png" alt="Churn Prediction">
+          </div>
+        </div>
+      </div>
+      <p>
+        Create a unified 360° customer view, run churn prediction models, and connect data from multiple sources 
+        with out-of-the-box integration connectors.
+      </p>
+    </div>
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #2C3E50;
-      font-weight: 500;
-    }
+    <!-- Solution 3 -->
+    <div class="solution">
+      <h3>Customer Insights Journeys</h3>
+      <div class="mockup">
+        <div class="monitor">
+          <div class="monitor-screen">
+            <img src="Marketing Journey.jpeg" alt="Marketing Journey">
+          </div>
+        </div>
+      </div>
+      <p>
+        Orchestrate personalized, multi-channel journeys (email, SMS, push notifications) and 
+        optimize with A/B testing, AI recommendations, and journey analytics.
+      </p>
+    </div>
 
-    nav a:hover {
-      color: #00AEEF;
-    }
+    <!-- Solution 4 -->
+    <div class="solution">
+      <h3>TRY CPQ</h3>
+      <div class="mockup">
+        <div class="monitor">
+          <div class="monitor-screen">
+            <img src="TRYCPQ.png" alt="TRY CPQ Add-on">
+          </div>
+        </div>
+      </div>
+      <p>
+        Our native Dynamics 365 add-on for Configure-Price-Quote. Configure complex products, 
+        apply advanced pricing and discounting models, and generate quotes directly inside opportunities.
+      </p>
+    </div>
 
-    .hero {
-      text-align: center;
-      padding: 100px 10%;
-      background: linear-gradient(to right, #00AEEF, #0077a6);
-      color: #fff;
-    }
+  </div>
+</section>
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .hero a {
-      background: #fff;
-      color: #0077a6;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 60px 10%;
-    }
-
-    section h2 {
-      color: #00AEEF;
-      margin-bottom: 20px;
-    }
-
-    .solutions ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .solutions li {
-      margin-bottom: 15px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .solutions li::before {
-      content: "✔";
-      color: #00AEEF;
-      position: absolute;
-      left: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f4f4f4;
-      margin-top: 40px;
-    }
-
-    footer img {
-      height: 25px;
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="Logo T.png" alt="Tryino Logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Driving Customer Engagement with Microsoft Dynamics 365</h1>
-    <p>We deliver CRM, Customer Insights, and CPQ solutions on Dynamics 365 to empower enterprises with intelligent customer experiences.</p>
-    <a href="#contact">Contact Us</a>
-  </section>
-
-  <section id="about">
-    <h2>About Tryino</h2>
-    <p>
-      Tryino is a Microsoft Dynamics 365 implementation partner, focusing on CRM transformation projects.
-      With expertise in Sales Management, Customer Insights Data & Journeys, and Loyalty Management,
-      we help enterprises accelerate their digital transformation.
-    </p>
-  </section>
-
-  <section id="solutions" class="solutions">
-    <h2>Our Solutions</h2>
-    <ul>
-      <li><b>Dynamics 365 Sales Management</b> – Automating sales processes, opportunity management, forecasting, and system integration.</li>
-      <li><b>Customer Insights (Data & Journeys)</b> – Customer 360 view, churn prediction, CLV models, and real-time customer journeys via email, SMS, and push.</li>
-      <li><b>TRY CPQ</b> – Our native Dynamics 365 add-on for Configure-Price-Quote. Advanced pricing, discounting, approval workflows, and seamless sales integration.</li>
-      <li><b>Loyalty & Campaign Management</b> – Personalized loyalty programs, point-based campaigns, and omni-channel engagement.</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:serdar.turkoglu@tryino.com">serdar.turkoglu@tryino.com</a></p>
-  </section>
-
-  <footer>
-    <img src="Logo T.png" alt="Tryino Logo Small">
-    <p>© 2025 Tryino. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<!-- CSS -->
+<style>
+.solutions {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.solution {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.mockup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.monitor {
+  width: 80%;
+  max-width: 900px;
+  background: #333;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.monitor:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 60px;
+  background: #555;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.monitor-screen {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.monitor-screen img {
+  width: 100%;
+  display: block;
+}
+</style>
