@@ -1,25 +1,155 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tryino Yazılım</title>
+  <title>Tryino</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #0a2540; color: white; padding: 20px; text-align: center; }
-    section { padding: 40px 10%; }
-    h1, h2 { color: #0a2540; }
-    footer { background: #f4f4f4; text-align: center; padding: 20px; margin-top: 40px; }
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #2C3E50;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2C3E50;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00AEEF;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 10%;
+      background: linear-gradient(to right, #00AEEF, #0077a6);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background: #fff;
+      color: #0077a6;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    section h2 {
+      color: #00AEEF;
+      margin-bottom: 20px;
+    }
+
+    .solutions ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .solutions li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .solutions li::before {
+      content: "✔";
+      color: #00AEEF;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-top: 40px;
+    }
+
+    footer img {
+      height: 25px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Tryino Yazılım ve Bilişim Teknolojileri</h1>
-    <p>CRM · Customer Insights · Loyalty Management</p>
+    <img src="Logo T.png" alt="Tryino Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Hakkımızda</h2>
+  <section class="hero">
+    <h1>Driving Customer Engagement with Microsoft Dynamics 365</h1>
+    <p>We deliver CRM, Customer Insights, and CPQ solutions on Dynamics 365 to empower enterprises with intelligent customer experiences.</p>
+    <a href="#contact">Contact Us</a>
+  </section>
+
+  <section id="about">
+    <h2>About Tryino</h2>
     <p>
-      Tryino, Microsoft Dynamics 365 ekosisteminde CRM projeleri, müşteri verisi analizi 
-      ve sadakat yönetimi konularında danışmanlık ve uygulama hizmetle
+      Tryino is a Microsoft Dynamics 365 implementation partner, focusing on CRM transformation projects.
+      With expertise in Sales Management, Customer Insights Data & Journeys, and Loyalty Management,
+      we help enterprises accelerate their digital transformation.
+    </p>
+  </section>
+
+  <section id="solutions" class="solutions">
+    <h2>Our Solutions</h2>
+    <ul>
+      <li><b>Dynamics 365 Sales Management</b> – Automating sales processes, opportunity management, forecasting, and system integration.</li>
+      <li><b>Customer Insights (Data & Journeys)</b> – Customer 360 view, churn prediction, CLV models, and real-time customer journeys via email, SMS, and push.</li>
+      <li><b>TRY CPQ</b> – Our native Dynamics 365 add-on for Configure-Price-Quote. Advanced pricing, discounting, approval workflows, and seamless sales integration.</li>
+      <li><b>Loyalty & Campaign Management</b> – Personalized loyalty programs, point-based campaigns, and omni-channel engagement.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:serdar.turkoglu@tryino.com">serdar.turkoglu@tryino.com</a></p>
+  </section>
+
+  <footer>
+    <img src="Logo T.png" alt="Tryino Logo Small">
+    <p>© 2025 Tryino. All rights reserved.</p>
+  </footer>
+</body>
+</html>
