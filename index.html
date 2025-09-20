@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #f9fbfd, #ffffff);
+      background: linear-gradient(to bottom, #eef3f9, #ffffff);
       color: #333;
     }
     header {
@@ -16,13 +16,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 12px 40px;
-      background: linear-gradient(to right, #ffffff, #f4f8fb);
+      background: linear-gradient(to right, #ffffff, #f1f6fb);
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     header img {
-      height: 55px; /* Logo daha büyük */
+      height: 75px; /* Logo daha büyük */
     }
     nav a {
       margin-left: 25px;
@@ -34,25 +35,54 @@
       background: linear-gradient(to right, #0078d7, #00a4ef);
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 120px 20px;
+      animation: fadeIn 1.5s ease-in-out;
     }
     .hero h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 15px;
+      animation: slideUp 1.5s ease-in-out;
     }
+    .hero p {
+      font-size: 1.2em;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .solutions {
       padding: 60px 20px;
-      text-align: center;
     }
     .solutions h2 {
-      font-size: 2em;
+      text-align: center;
+      font-size: 2.2em;
       margin-bottom: 50px;
+    }
+    .solution-group {
+      margin-bottom: 80px;
+      padding: 40px;
+      border-radius: 12px;
+      background: #f9fbfd;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .solution-group h3 {
+      color: #0078d7;
+      font-size: 1.6em;
+      margin-bottom: 20px;
     }
     .solution {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       flex-wrap: wrap;
     }
     .solution img {
@@ -69,24 +99,20 @@
     .solution:nth-child(even) {
       flex-direction: row-reverse;
     }
-    .solution-text h3 {
+    .solution-text h4 {
+      margin-bottom: 10px;
       color: #0078d7;
-      margin-bottom: 15px;
     }
-    .solution-text ul {
-      margin-top: 10px;
-    }
+
     .partner-banner {
+      width: 100%;
       text-align: center;
-      margin: 50px 0;
+      margin: 60px 0;
     }
     .contact {
       padding: 60px 20px;
       text-align: center;
       background: #f4f4f4;
-    }
-    .contact h2 {
-      margin-bottom: 20px;
     }
     footer {
       text-align: center;
@@ -114,80 +140,88 @@
   <section class="solutions" id="solutions">
     <h2>Our Solutions</h2>
 
-    <div class="solution">
-      <img src="Opportunity Management.png" alt="Opportunity Management">
-      <div class="solution-text">
-        <h3>Dynamics 365 Sales Implementation Services</h3>
-        <p>Manage opportunities and drive sales performance with forecasting and AI-powered insights.</p>
+    <div class="solution-group">
+      <h3>Dynamics 365 Sales Implementation Services</h3>
+      <div class="solution">
+        <img src="Opportunity Management.png" alt="Opportunity Management">
+        <div class="solution-text">
+          <h4>Opportunity Management</h4>
+          <p>Track, manage, and qualify opportunities efficiently with AI-powered sales insights.</p>
+        </div>
+      </div>
+      <div class="solution">
+        <img src="Forecast Predictions.png" alt="Forecast Predictions">
+        <div class="solution-text">
+          <h4>Forecast Predictions</h4>
+          <p>Gain revenue forecasts, track team performance, and plan effectively with predictive analytics.</p>
+        </div>
       </div>
     </div>
 
-    <div class="solution">
-      <img src="Forecast Predictions.png" alt="Forecast Predictions">
-      <div class="solution-text">
-        <h3>Forecasting & Revenue Predictions</h3>
-        <p>Gain accurate revenue forecasts, track team performance, and leverage predictive analytics for smarter sales planning.</p>
+    <div class="solution-group">
+      <h3>Dynamics 365 Customer Insights – Data</h3>
+      <div class="solution">
+        <img src="Churn Score.png" alt="Churn Score">
+        <div class="solution-text">
+          <h4>Churn Prediction</h4>
+          <p>Predict customer churn and act before you lose them using advanced ML models.</p>
+        </div>
+      </div>
+      <div class="solution">
+        <img src="Customer 360.png" alt="Customer 360">
+        <div class="solution-text">
+          <h4>Customer 360</h4>
+          <p>Unify data across all systems and build complete customer profiles for personalization.</p>
+        </div>
       </div>
     </div>
 
-    <div class="solution">
-      <img src="Churn Score.png" alt="Churn Score">
-      <div class="solution-text">
-        <h3>Dynamics 365 Customer Insights – Data</h3>
-        <p>Use churn prediction and customer lifetime value models to better understand customer behavior and take proactive action.</p>
+    <div class="solution-group">
+      <h3>Dynamics 365 Customer Insights – Journeys</h3>
+      <div class="solution">
+        <img src="Journey Measures.jpeg" alt="Journey Measures">
+        <div class="solution-text">
+          <h4>Journey Measures</h4>
+          <p>Design personalized journeys with measurable KPIs and A/B testing capabilities.</p>
+        </div>
+      </div>
+      <div class="solution">
+        <img src="SMS, Email, Push Notifications.jpeg" alt="Notifications">
+        <div class="solution-text">
+          <h4>Omni-Channel Engagement</h4>
+          <p>Communicate through email, SMS, and push notifications with advanced analytics.</p>
+        </div>
       </div>
     </div>
 
-    <div class="solution">
-      <img src="Customer 360.png" alt="Customer 360">
-      <div class="solution-text">
-        <h3>Customer 360 Profiles</h3>
-        <p>Unify customer data across multiple systems and get a complete view of customer interactions for personalized experiences.</p>
-      </div>
-    </div>
-
-    <div class="solution">
-      <img src="Journey Measures.jpeg" alt="Journey Measures">
-      <div class="solution-text">
-        <h3>Customer Insights – Journeys</h3>
-        <p>Design real-time, personalized journeys using multi-channel orchestration.</p>
-      </div>
-    </div>
-
-    <div class="solution">
-      <img src="SMS, Email, Push Notifications.jpeg" alt="Notifications">
-      <div class="solution-text">
-        <h3>Omni-Channel Engagement</h3>
-        <p>Engage customers with personalized communication through email, SMS, and push notifications, supported by A/B testing and analytics.</p>
-      </div>
-    </div>
-
-    <div class="solution">
-      <div class="solution-text">
-        <h3>TryCPQ – Configure Price Quote Solution</h3>
-        <p>Our native Dynamics 365 CPQ add-on simplifies complex pricing and quoting processes:</p>
-        <ul>
-          <li>Advanced product configuration inside Dynamics 365 Opportunities</li>
-          <li>Flexible discounting and approval workflows</li>
-          <li>Integration with Dynamics Sales for seamless workflows</li>
-          <li>Supports complex pricing models and bundling</li>
-        </ul>
+    <div class="solution-group">
+      <h3>TryCPQ – Configure Price Quote Solution</h3>
+      <div class="solution">
+        <div class="solution-text">
+          <p>Our native CPQ solution for Dynamics 365 Sales simplifies complex pricing and quoting processes:</p>
+          <ul>
+            <li>Seamless product configuration within Opportunities</li>
+            <li>Advanced pricing rules, discounting, and approvals</li>
+            <li>Integration with Dynamics workflows</li>
+            <li>Supports bundles, tiers, and custom pricing models</li>
+            <li>Designed for agility and scalability across industries</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <div class="partner-banner">
-    <!-- Microsoft Partner Banner -->
     <div id="dccn-6888d06c-e301-4acf-a2eb-6a431265415a"></div>
     <script type='text/javascript'>
       (function() {
           const scriptId = '6888d06c-e301-4acf-a2eb-6a431265415a';
           const bannerHeight = 90;
-          const bannerWidth = 728;
+          const bannerWidth = '100%'; // tam genişlik
           const embedType = 'banner';
           const script = document.createElement('script');
           script.defer = true;
-          script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=${bannerWidth}&embedType=${embedType}`;
+          script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=728&embedType=${embedType}`;
           document.body.append(script);
       })();
     </script>
