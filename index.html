@@ -5,29 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tryino</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #fff; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #eee; }
-    header img { height: 40px; }
-    nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: 500; }
-    .hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #0078d4, #00a1f1); color: white; }
-    .hero h1 { font-size: 36px; margin-bottom: 20px; }
-    .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; }
-    .section { padding: 80px 50px; }
-    .solutions { background: #f9f9f9; }
-    .solutions h2 { text-align: center; margin-bottom: 50px; font-size: 28px; }
-    .solution { display: flex; align-items: center; margin-bottom: 60px; }
-    .solution img { width: 45%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .solution div { width: 50%; padding: 0 30px; }
-    .solution h3 { margin-bottom: 15px; color: #0078d4; }
-    .solution p { line-height: 1.6; color: #444; }
-    .solution:nth-child(even) { flex-direction: row-reverse; }
-    .contact { text-align: center; padding: 60px 20px; }
-    .contact h2 { margin-bottom: 20px; }
-    footer { text-align: center; padding: 20px; background: #f0f0f0; font-size: 14px; color: #666; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 60px; /* Logo büyütüldü */
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0078D7, #00ADEF, #ffffff);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      animation: fadeInUp 1.2s ease;
+    }
+    section {
+      padding: 60px 40px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    .solution {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+      gap: 30px;
+      animation: fadeInUp 1s ease;
+    }
+    .solution img {
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .solution-text {
+      width: 50%;
+    }
+    .solution:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .trycpq {
+      max-width: 900px;
+      margin: auto;
+    }
+    .trycpq ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
   </style>
 </head>
 <body>
-
   <header>
     <img src="Logo T.png" alt="Tryino Logo">
     <nav>
@@ -38,79 +111,79 @@
   </header>
 
   <section class="hero" id="about">
-    <h1>Driving Customer Engagement with Microsoft Dynamics 365</h1>
-    <p>We are a Microsoft AI Cloud Partner delivering Dynamics 365 CRM, Customer Insights, and CPQ solutions. 
-    With our young and dynamic team, we embrace agility and bring innovation into every project, leveraging the full power of Azure.</p>
+    <h1>Empowering Businesses with Dynamics 365 & AI</h1>
+    <p>As a Microsoft AI Cloud Partner, Tryino delivers Dynamics 365 CRM, Customer Insights, and CPQ solutions built on Azure. With our agile and innovative approach, we empower enterprises to succeed in their digital transformation.</p>
   </section>
 
-  <section class="solutions" id="solutions">
+  <section id="solutions">
     <h2>Our Solutions</h2>
 
-    <!-- 1) Dynamics 365 Sales -->
+    <!-- Sales -->
+    <h3>Dynamics 365 Sales Implementation Services</h3>
     <div class="solution">
       <img src="Fırsat Yönetimi.png" alt="Opportunity Management">
-      <div>
-        <h3>Dynamics 365 Sales Implementation Services</h3>
-        <p>Automate opportunity management, pipeline forecasting, and sales processes. With Dynamics 365 Sales, we enable structured sales cycles, accurate forecasting, and intelligent guidance powered by Copilot.</p>
+      <div class="solution-text">
+        <h4>Opportunity Management</h4>
+        <p>Manage the entire sales lifecycle from lead to close, with AI-driven recommendations and Copilot support to maximize win rates.</p>
       </div>
     </div>
-
     <div class="solution">
       <img src="Forecast Predictions.png" alt="Forecast Predictions">
-      <div>
-        <h3>Sales Forecasting & Predictions</h3>
-        <p>Empower sales leaders with AI-driven predictions and real-time performance tracking. Gain insights into revenue forecasts, probability scores, and pipeline accuracy.</p>
+      <div class="solution-text">
+        <h4>Forecast Management</h4>
+        <p>Leverage predictive insights and advanced forecasting tools in Dynamics 365 Sales to plan and execute with confidence.</p>
       </div>
     </div>
 
-    <!-- 2) Customer Insights Data -->
+    <!-- CI Data -->
+    <h3>Dynamics 365 Customer Insights Data Implementation Services</h3>
     <div class="solution">
-      <img src="Churn Score.png" alt="Churn Score">
-      <div>
-        <h3>Customer Insights (Data)</h3>
-        <p>Build customer 360 views, churn prediction, and CLV models. With Customer Insights Data, you can unify data from multiple sources and run predictive models to identify churn risks early.</p>
+      <img src="Churn Score.png" alt="Churn Prediction">
+      <div class="solution-text">
+        <h4>AI-driven Predictions</h4>
+        <p>Use churn prediction, CLV models, and AI-powered insights to understand customer behavior and reduce attrition.</p>
       </div>
     </div>
-
     <div class="solution">
       <img src="Customer 360.png" alt="Customer 360">
-      <div>
-        <h3>Customer 360 View</h3>
-        <p>Unify data from CRM, ERP, e-commerce, and external providers into a single profile. Drive segmentation, personalization, and AI-powered recommendations.</p>
+      <div class="solution-text">
+        <h4>Customer 360</h4>
+        <p>Build a unified view of each customer with data across multiple touchpoints, enabling hyper-personalized engagement.</p>
       </div>
     </div>
 
-    <!-- 3) Customer Insights Journeys -->
+    <!-- CI Journeys -->
+    <h3>Dynamics 365 Customer Insights Journeys Implementation Services</h3>
     <div class="solution">
       <img src="Journey Measures.jpeg" alt="Journey Analytics">
-      <div>
-        <h3>Customer Insights (Journeys)</h3>
-        <p>Design customer journeys with advanced branching, real-time triggers, and A/B testing. Optimize engagement across channels and measure effectiveness with built-in analytics.</p>
+      <div class="solution-text">
+        <h4>Journey Analytics</h4>
+        <p>Design, optimize, and measure real-time journeys across channels. Understand customer engagement with detailed insights.</p>
       </div>
     </div>
-
     <div class="solution">
-      <img src="SMS, Email, Push Notifications.jpeg" alt="Multi-channel Journeys">
-      <div>
-        <h3>Omni-channel Campaigns</h3>
-        <p>Run campaigns via SMS, email, and push notifications natively in Dynamics 365. Deliver seamless, personalized experiences across all digital touchpoints.</p>
+      <img src="SMS, Email, Push Notifications.jpeg" alt="Multi-channel Engagement">
+      <div class="solution-text">
+        <h4>Omni-channel Marketing</h4>
+        <p>Engage your customers through email, SMS, and push notifications with AI-driven orchestration and personalization.</p>
       </div>
     </div>
 
-    <!-- 4) TRY CPQ -->
-    <div class="solution">
-      <img src="Forecast Management.png" alt="TRY CPQ">
-      <div>
-        <h3>TRY CPQ on Dynamics 365 Sales</h3>
-        <p>Our native Dynamics 365 add-on for Configure-Price-Quote. Run advanced pricing, discounting, product configuration, and approval workflows directly within opportunities.</p>
-      </div>
+    <!-- TryCPQ -->
+    <h3>TRY CPQ for Dynamics 365</h3>
+    <div class="trycpq">
+      <p>Our native CPQ solution built on Dynamics 365 Sales enables organizations to configure complex pricing and quoting with ease:</p>
+      <ul>
+        <li>Advanced pricing & discounting models</li>
+        <li>Guided selling & product configuration</li>
+        <li>Approval workflows & seamless integration</li>
+        <li>Fully embedded within Dynamics 365 Sales</li>
+      </ul>
     </div>
-
   </section>
 
   <!-- Microsoft Partner Banner -->
-  <section class="partner-banner" style="text-align:center; margin:40px 0;">
-    <!-- New banner 9/20/2025 -->
+  <section>
     <div id="dccn-6888d06c-e301-4acf-a2eb-6a431265415a"></div>
     <script type='text/javascript'>
       (function() {
@@ -126,14 +199,10 @@
     </script>
   </section>
 
-  <section class="contact" id="contact">
+  <footer id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:serdar.turkoglu@tryino.com">serdar.turkoglu@tryino.com</a></p>
-  </section>
-
-  <footer>
-    © 2025 Tryino. All rights reserved.
+    <p>&copy; 2025 Tryino Yazılım ve Bilişim Teknolojileri LTD ŞTİ</p>
   </footer>
-
 </body>
 </html>
